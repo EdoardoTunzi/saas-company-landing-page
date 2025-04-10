@@ -2,6 +2,7 @@ import { Container } from "../shared/Container";
 import logo from "../../assets/icon.svg";
 import { NavItem } from "../shared/NavItem";
 import { BtnLink } from "../shared/BtnLink";
+import { GoSun } from "react-icons/go";
 
 const navItems = [
   { href: "#", text: "Home" },
@@ -38,6 +39,12 @@ export const Navbar = () => {
             <div className="lg:min-w-max flex items-center sm:w-max w-full pb-6 lg:pb-0 border-b border-box-border lg:border-0 px-6 lg:px-0">
               <BtnLink text="Get started" href="#cta" className="" />
             </div>
+          </div>
+
+          <div className="min-w-max flex items-center gap-x-3">
+            <button className="outline-hidden flex relative text-heading-2 rounded-full p-2 lg:p-3 border border-box-border cursor-pointer">
+              <GoSun size={20} />
+            </button>
           </div>
         </nav>
       </Container>
