@@ -3,6 +3,8 @@ import logo from "../../assets/icon.svg";
 import { NavItem } from "../shared/NavItem";
 import { BtnLink } from "../shared/BtnLink";
 import { GoSun } from "react-icons/go";
+import { useThemeStore } from "../../store/ThemeStore";
+import { AiOutlineMoon } from "react-icons/ai";
 
 const navItems = [
   { href: "#", text: "Home" },
@@ -12,6 +14,8 @@ const navItems = [
 ];
 
 export const Navbar = () => {
+  const { toggleTheme, theme } = useThemeStore();
+
   return (
     <header className="absolute inset-x-0 top-0 z-50 py-6">
       <Container>
@@ -42,8 +46,11 @@ export const Navbar = () => {
           </div>
 
           <div className="min-w-max flex items-center gap-x-3">
-            <button className="outline-hidden flex relative text-heading-2 rounded-full p-2 lg:p-3 border border-box-border cursor-pointer">
-              <GoSun size={20} />
+            <button
+              onClick={toggleTheme}
+              className="outline-hidden flex relative text-heading-2 rounded-full p-2 lg:p-3 border border-box-border cursor-pointer"
+            >
+              {theme === "dark" ? <AiOutlineMoon size={20} /> : <GoSun size={20} />}
             </button>
           </div>
         </nav>
