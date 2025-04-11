@@ -1,17 +1,11 @@
 import { Container } from "../shared/Container";
 import logo from "../../assets/icon.svg";
+import { navItems } from "../../utils/nav-items";
 import { NavItem } from "../shared/NavItem";
 import { BtnLink } from "../shared/BtnLink";
 import { GoSun } from "react-icons/go";
 import { useThemeStore } from "../../store/ThemeStore";
 import { AiOutlineMoon } from "react-icons/ai";
-
-const navItems = [
-  { href: "#", text: "Home" },
-  { href: "#services", text: "Services" },
-  { href: "#about-us", text: "About Us" },
-  { href: "#pricing", text: "Pricing" }
-];
 
 export const Navbar = () => {
   const { toggleTheme, theme } = useThemeStore();

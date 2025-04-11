@@ -2,7 +2,7 @@ import { Container } from "../shared/Container";
 import { Title } from "../shared/Title";
 
 export const Brands = () => {
-  const logos = ["discord", "openai", "paypal", "slack", "spotify", "youtube"];
+  const logos = ["discord", "paypal", "spotify", "youtube"];
 
   return (
     <section>
