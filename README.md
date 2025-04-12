@@ -1,54 +1,42 @@
-# React + TypeScript + Vite
+# AI SaaS Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Project Banner](https://i.postimg.cc/NM5wDyQQ/Banner-React-Landing-Page.png)
 
-Currently, two official plugins are available:
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Introduction
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+This is a responsive, clean landing page built for an AI SaaS product.  
+I developed it using React, Tailwind CSS, TypeScript, Zustand and Vite to ensure fast performance, easy maintainability, and a modern UI/UX.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+The page is designed to convert visitors into users through effective design, smooth animations, and a clear value proposition.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+I built this project starting from an online tutorial, then customized and expanded it to sharpen my skills with Tailwind and TypeScript.
+This page is for demonstration purposes only. The company name and content are fictional.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Here's a preview of the deployed website here: [Preview link](https://ai-saas-company-responsive-landing-page.vercel.app/)
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## ⚡️ Features
+
+### ✨ Modern Landing Page  
+A clean, responsive design that focuses on usability and conversion.
+
+### 🌓 Dark/Light Mode  
+Built-in theme toggle using Zustand + Tailwind CSS tokens.
+
+### 🧩 Reusable Components  
+Sections like Hero, Features, Pricing, and CTA are all reusable components.
+
+### 🎯 Animated UI  
+Includes hover effects, gradients, and animated buttons for modern feel.
+
+### 🧠 Global State  
+Zustand handles theme persistence across sessions.
+
+---
