@@ -6,7 +6,7 @@ import { Numbers } from "./Numbers";
 
 export const Hero = () => {
   return (
-    <section className="relative pt-32 lg:pt-36">
+    <section className="relative pt-32 lg:pt-36 pb-16 md:pb-20">
       <Container className="flex flex-col lg:flex-row gap-10 lg:gap-12">
         <div className="absolute w-full lg:w-1/2 inset-y-0 lg:right-0">
           <span className="absolute left-6 md:left-4 top-20 w-30 h-300 rotate-90 skew-x-12 rounded-3xl bg-gradient-to-r from-blue-600 to-violet-600 blur-xl opacity-60 lg:opacity-95 lg:block hidden">

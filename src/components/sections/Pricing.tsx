@@ -6,7 +6,7 @@ import { Title } from "../shared/Title";
 
 export const Pricing = () => {
   return (
-    <section id="pricing" className="py-5">
+    <section id="pricing" className="py-16 md:py-20">
       <Container className="text-center">
         <Title>Pricing</Title>
         <Paragraph className="mt-4">Choose the plan that's right for your business.</Paragraph>
