@@ -5,7 +5,7 @@ export const Brands = () => {
   const logos = ["discord", "paypal", "spotify", "youtube"];
 
   return (
-    <section>
+    <section className="py-16 md:py-20">
       <Container className="space-y-8">
         <div className="text-center max-w-3xl mx-auto">
           <Title>Trusted by Industry Leaders</Title>

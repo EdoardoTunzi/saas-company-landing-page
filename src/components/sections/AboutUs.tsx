@@ -7,7 +7,7 @@ import { IoStarOutline } from "react-icons/io5";
 
 export const AboutUs = () => {
   return (
-    <section id="about-us">
+    <section id="about-us" className="py-16 md:py-20">
       <Container className="flex flex-col md:flex-row gap-10 lg:gap-12 items-center">
         <div className="w-full md:w-5/12 lg:w-1/2">
           <div className="w-full h-80 sm:h-100 relative">
